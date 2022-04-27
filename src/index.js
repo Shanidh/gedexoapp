@@ -6,6 +6,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import Login from './Login';
+import Profile from './Profile';
+import EditProfile from './EditProfile';
+import Partner from './Partner';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +18,10 @@ root.render(
           <Routes>
             <Route path="/" element={<App />} />
              <Route path="login" element={<Login />} /> 
+             <Route path="profile" element={<Profile/>} >
+               {/* <Route path="editprofile" element={< EditProfile/>} /> */}
+             </Route>
+             <Route path="partner" element={<Partner/>} />
              </Routes>
         </BrowserRouter>
     </div>

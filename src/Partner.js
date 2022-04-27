@@ -1,20 +1,19 @@
-import './App.css';
 import React from 'react';
-import ButtonAppBar from './components/ButtonAppBar';
-import { ProgressBar } from 'react-bootstrap';
+import './Profile.css';
 
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-function App() {
-   
-  return (
-    <div className="App">
-     <ButtonAppBar />
-     <div className='main'>
-         <center>
-         <div className='sub-main'> 
-         <small style={{paddingRight:'120px'}}>40%</small> 
-         <ProgressBar variant="success" now={40} style={{width:'200px', marginLeft:'40px', marginRight:'40px', height:'5px'}} /><br />
-           <div><p><b>Physical Informations</b></p></div><br />
+function Partner(props) {
+    return (
+        <div className='profilestyle'>
+          <br />
+            <div>
+                <button className='but'><Link to='/profile'>Edit profile</Link></button>
+                <button className='but'><Link to='/partner'>partner preferences</Link></button>
+                <button className='but'>ssdd</button>
+            </div>
+            <div className='personalinfo1'>
+            <div><p><b>Physical Informations</b></p></div><br />
            <div><label>Height</label><br />
            <select name="Height" id="Height">
             <option value="select">select</option>
@@ -42,31 +41,9 @@ function App() {
             </select></div><br /><br />
             <div><button className='nextbutton'>Next</button></div>
             <br />
-         </div>
-         </center>
-         <br /><br />
-         <div className='row footerr'>
-           <div className='float1' style={{width:"225px"}}>
-             <p><b>Helpline 24/7</b></p>
-             <p>+91 000000000</p>
-           </div>
-           <div  className='float2'  style={{width:"225px"}}>
-             <p><b>Send your queries</b></p>
-             <p>matrimony@gmail.com</p>
-           </div>
-         </div><br />
-         <p style={{color: 'white'}} >Copyright &#169; 2022. All Right Reserved</p>
-     </div>
-
-    </div>
-  );
+            </div>
+        </div>
+    );
 }
 
-export default App;
-
-
-
-
-
-
-
+export default Partner;

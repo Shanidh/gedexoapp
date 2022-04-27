@@ -1,0 +1,43 @@
+.profilestyle {
+    /* text-align: center; */
+    background-image: linear-gradient(180deg, black, rgb(24, 24, 145));
+    height: 100%;
+}
+
+.but {
+    margin: 10px 50px 20px 50px;
+    width: 180px;
+    border-radius: 10px;
+    color: blue;
+    background-color: white;
+}
+
+.profilecard {
+    position: absolute;
+    /* width: 120vh; */
+    height: 280px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    /* display: flex; */
+}
+
+.personalinfo {
+    /* position: absolute; */
+    background: rgb(188, 204, 210, 0.1);
+    margin-top: 300px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.personalinfo1 {
+    /* position: absolute; */
+    background: rgb(188, 204, 210, 0.1);
+    margin-top: 100px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
